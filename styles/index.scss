@@ -25,7 +25,14 @@ body {
   background-image: linear-gradient(220deg, #3754da 60%, #1f3eca 60%);
 }
 
+@media screen and (max-width: 765px) {
+  .gradient-btn {
+    width: 150px;
+  }
+}
+
 @import "header";
 @import "nav";
 @import "why";
 @import "how";
+@import "spain";
