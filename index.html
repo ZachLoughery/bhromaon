@@ -45,16 +45,26 @@
       </div>
     </header>
     <nav id="navbar">
-      <div>
-        <h2><a href="#">Bhromaon</a></h2>
+      <div class="nav__navbar">
+        <div class="nav__navbar__content">
+          <h2><a href="#">Bhromaon</a></h2>
+          <ul>
+            <li class="visible"><a href="#">Who We Are</a></li>
+            <li class="visible"><a href="#">What We Do</a></li>
+            <li class="visible"><a href="#">Travel With Us</a></li>
+            <li class="visible"><a href="#">Contact Us</a></li>
+            <li class="hidden">
+              <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="nav-menu" class="nav__menu hidden-menu">
         <ul>
-          <li class="visible"><a href="#">Who We Are</a></li>
-          <li class="visible"><a href="#">What We Do</a></li>
-          <li class="visible"><a href="#">Travel With Us</a></li>
-          <li class="visible"><a href="#">Contact Us</a></li>
-          <li class="hidden">
-            <button><i class="fa-solid fa-bars"></i></button>
-          </li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Travel With Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
     </nav>

@@ -9,3 +9,13 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("sticky-border");
   }
 });
+
+let menuToggle = document.getElementById("menu-toggle");
+let navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("hidden-menu");
+  setTimeout(() => {
+    navMenu.classList.toggle("menu-active");
+  }, 50);
+});
