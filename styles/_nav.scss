@@ -1,0 +1,151 @@
+nav {
+  background-color: #5474fd;
+  color: white;
+  height: 83px;
+  display: flex;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 60vw;
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      margin: 0;
+      font-family: fonts.$font-josefin;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 12px;
+      margin: 0;
+
+      li {
+        font-family: fonts.$font-aleo;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      li a:hover {
+        color: #011057;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  nav {
+    div {
+      max-width: 60vw;
+      width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 2.4px;
+      }
+
+      ul {
+        gap: 12px;
+
+        li {
+          width: 128px;
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1249px) {
+  nav {
+    div {
+      max-width: 80vw;
+      width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 2.4px;
+      }
+
+      ul {
+        gap: 12px;
+
+        li {
+          font-size: 12px;
+          line-height: 24px;
+        }
+      }
+
+      .hidden {
+        display: none;
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  nav {
+    div {
+      max-width: 90vw;
+      width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 2.4px;
+      }
+
+      ul {
+        gap: 12px;
+
+        li {
+          font-size: 12px;
+          line-height: 24px;
+        }
+      }
+
+      .visible {
+        display: none;
+      }
+
+      .hidden {
+        display: block;
+    }
+
+    button {
+        background: none;
+        color: white;
+        border: none;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 2.4px;
+    }
+
+    button:hover {
+        color: #011057;
+    }
+
+    }
+  }
+}
