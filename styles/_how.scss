@@ -11,23 +11,15 @@
   h2 {
     margin: 0;
     font-family: fonts.$font-aleo;
-    font-size: 36px;
     font-weight: 400;
-    line-height: 26px;
   }
 
   &__wrapper {
-    max-width: 60vw;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
     text-align: center;
-
-    i {
-      font-size: 56px;
-      margin-bottom: 35px;
-    }
 
     &__magnifying {
       color: #5474fd;
@@ -39,6 +31,78 @@
 
     &__thumb {
       color: #00a2ff;
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .how {
+    h2 {
+      font-size: 36px;
+      line-height: 26px;
+    }
+
+    &__wrapper {
+      max-width: 60vw;
+
+      i {
+        font-size: 56px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1449px) {
+  .how {
+    h2 {
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &__wrapper {
+      max-width: 80vw;
+
+      i {
+        font-size: 50px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .how {
+    h2 {
+      font-size: 25px;
+      line-height: 26px;
+    }
+
+    &__wrapper {
+      max-width: 80vw;
+
+      i {
+        font-size: 45px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .how {
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__wrapper {
+      max-width: 80vw;
+
+      i {
+        font-size: 40px;
+        margin-bottom: 35px;
+      }
     }
   }
 }
